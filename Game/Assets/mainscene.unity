@@ -207,6 +207,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1135575996}
   - 114: {fileID: 1135575995}
+  - 114: {fileID: 1135575997}
   m_Layer: 0
   m_Name: GameState
   m_TagString: Untagged
@@ -237,6 +238,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!114 &1135575997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1135575994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ec72bf4b64e33742aa337d1ee72205d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfBuildings: 30
+  buildings: []
+  planet: {fileID: 1136266337}
+  buildingPrefab: {fileID: 496568, guid: ba0a8c11a428f044dafee03cf8e26fa5, type: 2}
 --- !u!1 &1136266336
 GameObject:
   m_ObjectHideFlags: 0
