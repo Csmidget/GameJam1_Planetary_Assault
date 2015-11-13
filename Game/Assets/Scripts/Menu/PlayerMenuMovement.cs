@@ -20,6 +20,7 @@ public class PlayerMenuMovement : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () 
     {
+        //call Controls() in fixed update due to physics use
         Controls();
 	}
 
@@ -28,7 +29,7 @@ public class PlayerMenuMovement : MonoBehaviour {
         GetComponent<Rigidbody2D>().AddForce(transform.up * accel);
             
         //WAS Controls
-        //Forwards
+        //Forward
         if (Input.GetKey(KeyCode.W))
         {
             if (accel < topSpeed)
@@ -42,9 +43,9 @@ public class PlayerMenuMovement : MonoBehaviour {
             }
         }
 
+        //slow down if forwards isn't pressed
         if (!Input.GetKey(KeyCode.W))
         {
-            //slow down if forwards isn't pressed
             if (accel > 0.0f)
             {
                 accel -= slowSpeed * Time.deltaTime;
@@ -56,6 +57,7 @@ public class PlayerMenuMovement : MonoBehaviour {
             }
         }
 
+        //left and right using physics
         if (Input.GetKey(KeyCode.A))
         {
             GetComponent<Rigidbody2D>().AddTorque(rot);
