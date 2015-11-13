@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour {
             planet.Rotate(Vector3.forward * rot * Time.deltaTime);
         }
 
-        transform.position = Vector3.Slerp(transform.position, mousePos, 0.1f);         //this then user linear interpolation to smooth out the trasnition from ships position to mouse.
+        transform.position = Vector3.Lerp(transform.position, mousePos, 0.1f);         //this then user linear interpolation to smooth out the trasnition from ships position to mouse.
        
 	}
 }
