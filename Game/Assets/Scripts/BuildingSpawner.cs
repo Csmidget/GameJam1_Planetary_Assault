@@ -14,13 +14,12 @@ public class BuildingSpawner : MonoBehaviour {
 		{
 			Transform go = (Transform)GameObject.Instantiate(buildingPrefab, new Vector3 (0, 0, 0), Quaternion.identity);
 	//		go.transform.parent = planet.transform;
-            print(go);
 			Transform goTransform;
 			goTransform = go.GetComponent<Transform>();
             goTransform.parent = planet.transform;
 			goTransform.position = planet.position;
-			goTransform.Rotate(new Vector3(1,0,0));
-			goTransform.Translate (new Vector3(0,planet.GetComponent<CircleCollider2D>().radius));
+			goTransform.Rotate(new Vector3(0,0,Random.Range(0,360)));
+			goTransform.Translate (new Vector3(0,planet.GetComponent<CircleCollider2D>().radius * planet.localScale.x + 0.5f));
 			buildings[i] = go;
 		}
 	}
