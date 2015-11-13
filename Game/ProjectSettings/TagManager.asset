@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Planet
   - Building
+  - Projectile
+  - BG
   layers:
   - Default
   - TransparentFX
