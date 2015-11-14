@@ -19,6 +19,7 @@ public class NewBehaviourScript : MonoBehaviour {
     {
         Transform target = null;
         int radius = 10;
+        //Array of colliders within area
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, radius);
 
         //if no target has been found, look for one
@@ -36,8 +37,7 @@ public class NewBehaviourScript : MonoBehaviour {
                 else if (colliders[i].gameObject.tag == "Player")
                 {
                     //target = colliders[i].transform;
-                    //MOVE TO NEXT LEVEL HERE
-                    //OR SEND A MESSAGE TO SINGLETON TO CHANGE LEVEL
+                    //MISSION DETAILS TO APPEAR HERE (LEVEL NAME, DIFFICULTY ETC)
                 }
                 else
                 {
@@ -46,5 +46,12 @@ public class NewBehaviourScript : MonoBehaviour {
             }
         }
         return target;
+    }
+
+    void OnCollisionEnter2D(Collider2D col)
+    {
+        //Load Level Here
+        //Application.LoadLevel("LevelName");
+        print("Load me!");
     }
 }
