@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21265098}
   - 50: {fileID: 5061812}
   - 58: {fileID: 5870570}
+  - 114: {fileID: 11499636}
   m_Layer: 0
   m_Name: Bomb
   m_TagString: Bomb
@@ -59,6 +60,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: .100000001
+--- !u!114 &11499636
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 104e1901517e5d046858a8727dd31ef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21265098
 SpriteRenderer:
   m_ObjectHideFlags: 1
