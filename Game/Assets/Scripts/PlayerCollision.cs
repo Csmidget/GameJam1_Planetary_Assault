@@ -19,7 +19,7 @@ public class PlayerCollision : MonoBehaviour {
     {
         if (col.gameObject.tag == "E_Missle")
         {
-            PlayerState.instance.pHealth -= col.gameObject.GetComponent<ProjectileDamage>().GetDamage();
+           // PlayerState.instance.pHealth -= col.gameObject.GetComponent<ProjectileDamage>().GetDamage();
             Destroy(col.gameObject);
         }
 
