@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour {
 	void Update () 
     {
         Controls();
+        Fire();
 	}
 
     void Controls()
