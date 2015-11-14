@@ -34,6 +34,6 @@ public class BuildingSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        if (numberOfBuildings == 0) PlanetAttackState.instance.WinLevel();
 	}
 }
