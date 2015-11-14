@@ -5,14 +5,15 @@ public class E_Missle : MonoBehaviour {
     public Transform playerShip;        //stores the players position.
     Vector3 storeTransform;     //stores the trasnform once to a vector3, this is so the missle doesnt home in.
     Rigidbody2D rb;
+
     float thrust;
+    float damage;
 
 	// Use this for initialization
 	void Start () 
     {
         rb = GetComponent<Rigidbody2D>();
         storeTransform = playerShip.position;
-        
         thrust = 2f;
 	}
 	

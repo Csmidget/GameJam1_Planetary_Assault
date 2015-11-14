@@ -19,7 +19,6 @@ public class Gamestate : MonoBehaviour
     void Update()
     {
         PausingGame();
-
     }
 
 
