@@ -717,15 +717,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11431898, guid: b0e0b2b19b3645448925d08ae09d4d1c, type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: .264705896
       objectReference: {fileID: 0}
     - target: {fileID: 11431898, guid: b0e0b2b19b3645448925d08ae09d4d1c, type: 2}
       propertyPath: m_Color.b
-      value: .337931156
+      value: .264705896
       objectReference: {fileID: 0}
     - target: {fileID: 11431898, guid: b0e0b2b19b3645448925d08ae09d4d1c, type: 2}
       propertyPath: m_Color.g
-      value: 1
+      value: .264705896
       objectReference: {fileID: 0}
     - target: {fileID: 135058, guid: b0e0b2b19b3645448925d08ae09d4d1c, type: 2}
       propertyPath: m_Name
