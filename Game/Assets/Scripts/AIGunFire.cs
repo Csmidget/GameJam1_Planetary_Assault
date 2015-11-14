@@ -29,7 +29,7 @@ public class AIGunFire : MonoBehaviour
         else
         {
             SpawnProjectile();
-            timer = 2.0f;
+            timer = 0.5f;
         }
     }
 

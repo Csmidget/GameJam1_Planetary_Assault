@@ -18,7 +18,7 @@ public class BulletTravel : MonoBehaviour
 
 	void Start () 
     {
-        speed = 5f;
+        speed = 15f;
 	}
 	
 	// Update is called once per frame

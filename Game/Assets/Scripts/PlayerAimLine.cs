@@ -11,7 +11,6 @@ public class PlayerAimLine : MonoBehaviour
     {
         planet = GameObject.FindGameObjectWithTag("Planet").transform;
         lineLength = Vector3.Distance(planet.transform.position, transform.position);
-        //lineLength.z = 0;
         LineRenderer line = gameObject.AddComponent<LineRenderer>();
         line.material = new Material(Shader.Find("Particles/Additive"));
         line.SetColors(c1, c1);
