@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 496568}
   - 212: {fileID: 21218834}
+  - 114: {fileID: 11483020}
   - 61: {fileID: 6184748}
-  - 114: {fileID: 11430460}
   m_Layer: 0
   m_Name: Building1
   m_TagString: Building
@@ -43,7 +43,7 @@ BoxCollider2D:
   m_Offset: {x: -4.76837158e-07, y: -.137846947}
   serializedVersion: 2
   m_Size: {x: .516537368, y: 1.00430608}
---- !u!114 &11430460
+--- !u!114 &11483020
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -51,9 +51,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 126768}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5017a00a334025749b0561de08e33edf, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ba404674278ecd4a9b3b1f4ebcc4a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
 --- !u!212 &21218834
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -92,6 +93,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 4b6759f99b9f609479f9461e71f6b9af,
         type: 3}
+    - target: {fileID: 0}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 126768}
