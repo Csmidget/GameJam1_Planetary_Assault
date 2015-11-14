@@ -14,7 +14,7 @@ public class PlayerAimLine : MonoBehaviour
         LineRenderer line = gameObject.AddComponent<LineRenderer>();
         line.material = new Material(Shader.Find("Particles/Additive"));
         line.SetColors(c1, c1);
-        line.SetWidth(0.05f, 0.05f);
+        line.SetWidth(0.01f, 0.01f);
         line.SetVertexCount((int)lineLength);
 	}
 	

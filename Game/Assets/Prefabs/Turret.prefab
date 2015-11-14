@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd12632f61b38ec4f85e297741d36728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootdistance: 11
 --- !u!114 &11405296
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -225,6 +226,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_TagString
       value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: shootdistance
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
