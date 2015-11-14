@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour {
 
     public float horizontalSpeed = 2.0F;
     public float verticalSpeed = 2.0F;
+    Transform cam;
 
 	// Use this for initialization
 	void Start () 
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour {
         //Cursor.lockState = CursorLockMode.Locked;Cursor.lockState = CursorLockMode.Locked;
         planet = GameObject.FindGameObjectWithTag("Planet").transform;        
         bg = GameObject.FindGameObjectWithTag("BG").transform;
+        cam = GameObject.FindGameObjectWithTag("MinimapCam").transform;
 	}
 	
 	// Update is called once per frame
@@ -36,12 +38,14 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetKey(KeyCode.A))
         {
             planet.Rotate(-Vector3.forward * rotP * Time.deltaTime);
+            cam.Rotate(-Vector3.forward * rotP * Time.deltaTime);
             bg.Rotate(-Vector3.forward * rotBG * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
             planet.Rotate(Vector3.forward * rotP * Time.deltaTime);
+            cam.Rotate(Vector3.forward * rotP * Time.deltaTime);
             bg.Rotate(Vector3.forward * rotBG * Time.deltaTime);
         }
 
