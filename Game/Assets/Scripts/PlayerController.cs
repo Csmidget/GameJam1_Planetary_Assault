@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour {
         Vector3 dir = planet.position - pos;
 
         Quaternion rotation = Quaternion.LookRotation(Vector3.forward, -dir);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 1.75f);
+        //transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 1.75f);
+        transform.rotation = rotation;
     }
 }
