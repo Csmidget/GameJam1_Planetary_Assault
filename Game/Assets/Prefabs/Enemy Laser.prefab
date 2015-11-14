@@ -12,6 +12,7 @@ GameObject:
   - 114: {fileID: 11422394}
   - 114: {fileID: 11427478}
   - 61: {fileID: 6109212}
+  - 61: {fileID: 6128600}
   m_Layer: 0
   m_Name: Enemy Laser
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 182490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.84818316, y: -.823063791, z: 0}
+  m_LocalPosition: {x: 2.11610723, y: 2.5937593, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -44,6 +45,19 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: .0500000007, y: .189999998}
+--- !u!61 &6128600
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182490}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: .00446438789, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .0589286461, y: .189999998}
 --- !u!114 &11422394
 MonoBehaviour:
   m_ObjectHideFlags: 1
