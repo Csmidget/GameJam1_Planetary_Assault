@@ -130,7 +130,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22489598, guid: b0e0b2b19b3645448925d08ae09d4d1c, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -36
+      value: -14
       objectReference: {fileID: 0}
     - target: {fileID: 22489598, guid: b0e0b2b19b3645448925d08ae09d4d1c, type: 2}
       propertyPath: m_SizeDelta.x
@@ -163,6 +163,10 @@ Prefab:
     - target: {fileID: 22489598, guid: b0e0b2b19b3645448925d08ae09d4d1c, type: 2}
       propertyPath: m_Pivot.y
       value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22489598, guid: b0e0b2b19b3645448925d08ae09d4d1c, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 3.73620605
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0e0b2b19b3645448925d08ae09d4d1c, type: 2}
@@ -998,7 +1002,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22403388, guid: d189ad7adcc09d4479c22fa34f108d67, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -36
+      value: -14
       objectReference: {fileID: 0}
     - target: {fileID: 22403388, guid: d189ad7adcc09d4479c22fa34f108d67, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1031,6 +1035,10 @@ Prefab:
     - target: {fileID: 22403388, guid: d189ad7adcc09d4479c22fa34f108d67, type: 2}
       propertyPath: m_Pivot.y
       value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403388, guid: d189ad7adcc09d4479c22fa34f108d67, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 3.73620582
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d189ad7adcc09d4479c22fa34f108d67, type: 2}
@@ -1281,8 +1289,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ca5190be8c40c48b8af7af2e04f62d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalSpeed: 1
-  verticalSpeed: 1
+  horizontalSpeed: 5
+  verticalSpeed: 5
 --- !u!114 &1972767223
 MonoBehaviour:
   m_ObjectHideFlags: 0
