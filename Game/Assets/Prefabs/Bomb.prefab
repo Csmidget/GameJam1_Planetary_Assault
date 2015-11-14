@@ -73,7 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c34eb5fea20061408c19d89ef91e51d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 30
+  damage: 100
 --- !u!114 &11468384
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -157,7 +157,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: damage
-      value: 30
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: speed
