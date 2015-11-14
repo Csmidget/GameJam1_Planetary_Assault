@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21217496}
   - 61: {fileID: 6154134}
   - 61: {fileID: 6184902}
+  - 114: {fileID: 11439092}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Building
@@ -153,6 +154,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24de0896140d1cc4cbbda1aead09677e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11439092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cc33f2a9d48b4144920c6e22feccf55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 150
 --- !u!212 &21217496
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -236,6 +249,10 @@ Prefab:
       propertyPath: missilePrefab
       value: 
       objectReference: {fileID: 490800, guid: fa6a927650590324e8e5a946b6059562, type: 2}
+    - target: {fileID: 0}
+      propertyPath: health
+      value: 150
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 111626}
