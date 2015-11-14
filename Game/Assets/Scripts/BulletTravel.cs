@@ -5,6 +5,17 @@ public class BulletTravel : MonoBehaviour
 {
     float speed;
 	// Use this for initialization
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            PlayerState.instance.pHealth --;
+            Destroy(gameObject);
+        }
+
+    }
+
 	void Start () 
     {
         speed = 5f;
