@@ -11,6 +11,7 @@ public class Building : MonoBehaviour {
 	void Start () 
     {
         health = 100;
+
 	}
 	
 	// Update is called once per frame
@@ -27,8 +28,12 @@ public class Building : MonoBehaviour {
             health -= dmgTaken;
             Destroy(col.gameObject);
         }
-        else
+
+
+        if (health <= 0)
         {
+            PlanetAttackState.instance.BuildingDestroyed();
+            Destroy(col.gameObject);
             Destroy(gameObject);
         }
     }
