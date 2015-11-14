@@ -4,7 +4,10 @@ using System.Collections;
 public class AIGunFire : MonoBehaviour 
 {
     float timer;
+<<<<<<< HEAD
    // float timer2;
+=======
+>>>>>>> origin/master
     public Transform bulletSpawner;
     public Transform bulletPrefab;
     //public Transform missilePrefab;
@@ -33,6 +36,7 @@ public class AIGunFire : MonoBehaviour
             timer = 0.5f;
         }
 
+<<<<<<< HEAD
         /*if (timer2 > 0)
         {
             timer2 -= Time.deltaTime;
@@ -42,14 +46,21 @@ public class AIGunFire : MonoBehaviour
             SpawnMissile();
             timer = 10f;
         }*/
+=======
+
+>>>>>>> origin/master
     }
 
     void SpawnProjectile()
     {
         Instantiate(bulletPrefab, bulletSpawner.position, transform.rotation);
     }
+<<<<<<< HEAD
     /*void SpawnMissile()
     {
         Instantiate(missilePrefab, bulletSpawner.position, transform.rotation);
     }*/
+=======
+
+>>>>>>> origin/master
 }
