@@ -20,6 +20,7 @@ public class Gamestate : MonoBehaviour
             Debug.LogError("Singleton GameState already found...");
         }
         instance = this;
+        Object.DontDestroyOnLoad(transform.gameObject);
     }
 
     void Update()
@@ -30,6 +31,7 @@ public class Gamestate : MonoBehaviour
             if (lvl1Cleared)
             {
                 //Unlock level 2
+                //lvl
             }
             if (lvl2Cleared)
             {
