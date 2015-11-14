@@ -16,7 +16,7 @@ GameObject:
   - 61: {fileID: 6128600}
   m_Layer: 0
   m_Name: Enemy Laser
-  m_TagString: Untagged
+  m_TagString: E_Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c34eb5fea20061408c19d89ef91e51d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 1
 --- !u!212 &21201436
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -128,7 +128,19 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: damage
-      value: 5
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: E_Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_GravityScale
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

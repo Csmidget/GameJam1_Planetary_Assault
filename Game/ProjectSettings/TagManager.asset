@@ -10,6 +10,7 @@ TagManager:
   - Building
   - E_Missile
   - MinimapCam
+  - E_Bullet
   layers:
   - Default
   - TransparentFX

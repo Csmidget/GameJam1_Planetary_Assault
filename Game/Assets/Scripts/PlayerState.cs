@@ -45,8 +45,6 @@ public class PlayerState : MonoBehaviour
         }
         Object.DontDestroyOnLoad(transform.gameObject);
 
-
-
         Debug.Log("++");
     }
 
