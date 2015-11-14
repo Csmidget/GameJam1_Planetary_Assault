@@ -3,15 +3,14 @@ using System.Collections;
 
 public class Building : MonoBehaviour {
 
-    int health;
-    //float money;
+    public int health = 100;
+    public float bounty = 50;
     
 
 	// Use this for initialization
 	void Start () 
     {
         health = 100;
-       // money = 10f;
 	}
 	
 	// Update is called once per frame
