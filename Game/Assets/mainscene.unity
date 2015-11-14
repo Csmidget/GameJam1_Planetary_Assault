@@ -630,7 +630,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1566240917}
   m_Layer: 0
-  m_Name: BulletSpawner
+  m_Name: PProjectileSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -713,8 +713,9 @@ GameObject:
   - 212: {fileID: 1972767220}
   - 114: {fileID: 1972767223}
   - 114: {fileID: 1972767222}
-  - 50: {fileID: 1972767224}
+  - 114: {fileID: 1972767226}
   - 114: {fileID: 1972767225}
+  - 50: {fileID: 1972767224}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -772,8 +773,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ca5190be8c40c48b8af7af2e04f62d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpawner: {fileID: 1566240917}
-  bulletPrefab: {fileID: 419600, guid: fd5be182a29b63c45a834452f851ff69, type: 2}
 --- !u!114 &1972767223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -817,6 +816,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pHealth: 0
   pScore: 100
+--- !u!114 &1972767226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1972767219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d46d6d7577e24fe439dcca59d802d292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpawner: {fileID: 1566240917}
+  projectilePrefab: {fileID: 419600, guid: fd5be182a29b63c45a834452f851ff69, type: 2}
 --- !u!1 &1983323304
 GameObject:
   m_ObjectHideFlags: 0

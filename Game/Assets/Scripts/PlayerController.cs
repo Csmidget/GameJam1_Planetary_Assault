@@ -5,25 +5,19 @@ public class PlayerController : MonoBehaviour {
 
     Transform planet;           //used to store a planet transform.
 
-    public Transform bulletSpawner;      //used to store the bulletSpawn transform, used for spawning the prefab position
-    public Transform bulletPrefab;
-    Transform projectile;
     Transform bg;               //background
     Vector3 mousePos;
-    float timer;
 
 	// Use this for initialization
 	void Start () 
     {
         planet = GameObject.FindGameObjectWithTag("Planet").transform;        
         bg = GameObject.FindGameObjectWithTag("BG").transform;
-        timer = 0.5f;
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
-        Fire();
         Controls();
         RotateToPlanet();
 	}
@@ -48,27 +42,6 @@ public class PlayerController : MonoBehaviour {
         }
 
         transform.position = Vector3.Lerp(transform.position, mousePos, Time.deltaTime);         //this then user linear interpolation to smooth out the trasnition from ships position to mouse.
-    }
-
-    void Fire()
-    {
-        timer -= Time.deltaTime;
-        print (timer);
-        if (Input.GetKey(KeyCode.Space) && timer <= 0)
-        {
-            SpawnProjectile();
-            timer = 0.5f;
-        }
-
-        if (timer < 0)
-        {
-            timer = 0;
-        }
-    }
-
-    void SpawnProjectile()
-    {
-        projectile = (Transform)Instantiate(bulletPrefab, bulletSpawner.position, transform.rotation);
     }
 
     void RotateToPlanet()

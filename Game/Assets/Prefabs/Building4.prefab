@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21242226}
   - 61: {fileID: 6195670}
   - 61: {fileID: 6136426}
+  - 114: {fileID: 11408298}
   m_Layer: 0
   m_Name: Building4
   m_TagString: Building
@@ -56,6 +57,19 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -.227822781}
   serializedVersion: 2
   m_Size: {x: .680000007, y: .644354343}
+--- !u!114 &11408298
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5017a00a334025749b0561de08e33edf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  bounty: 50
 --- !u!212 &21242226
 SpriteRenderer:
   m_ObjectHideFlags: 1
