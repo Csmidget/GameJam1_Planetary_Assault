@@ -688,10 +688,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 835980511}
   - 20: {fileID: 835980510}
-  - 124: {fileID: 835980509}
   - 92: {fileID: 835980508}
+  - 124: {fileID: 835980509}
   - 81: {fileID: 835980507}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MinimapCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -727,7 +727,7 @@ Camera:
   m_GameObject: {fileID: 835980506}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 4
+  m_ClearFlags: 3
   m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -860,7 +860,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c7517c924eaa91b46a67ad9799429b69, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ba458a28f52266b419ab5537261a9a94, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!58 &1136266339
 CircleCollider2D:
