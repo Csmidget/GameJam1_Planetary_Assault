@@ -19,7 +19,7 @@ public class E_Missle : MonoBehaviour {
 	// Update is called once per frame
 	void Update() 
     {
-        transform.Translate(Vector3.Slerp(transform.up * thrust, storeTransform, 0.5f));
+        transform.Translate(Vector3.Slerp(transform.up * thrust, storeTransform, 0.5f)* Time.deltaTime);
 	}
 
 

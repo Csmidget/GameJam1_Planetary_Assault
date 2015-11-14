@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd12632f61b38ec4f85e297741d36728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootdistance: 15
 --- !u!114 &11405296
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -140,6 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpawner: {fileID: 412682}
   bulletPrefab: {fileID: 492018, guid: 509efe8931561754d935fb4c15610b2c, type: 2}
+  misslePrefab: {fileID: 490800, guid: fa6a927650590324e8e5a946b6059562, type: 2}
 --- !u!114 &11428048
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -226,6 +228,10 @@ Prefab:
       propertyPath: m_TagString
       value: Building
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: misslePrefab
+      value: 
+      objectReference: {fileID: 490800, guid: fa6a927650590324e8e5a946b6059562, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 111626}
