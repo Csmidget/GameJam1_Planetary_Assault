@@ -17,7 +17,7 @@ public class PlayerGunFire : MonoBehaviour
         timer = 0.5f;
         timerCap = 0.5f;
         timer2 = 0.5f;
-        timer2Cap = 0.1f;
+        timer2Cap = 0.25f;
 	}
 	
 	// Update is called once per frame
@@ -58,12 +58,12 @@ public class PlayerGunFire : MonoBehaviour
         Transform projectile = (Transform)Instantiate(proj, projectileSpawner.position, transform.rotation);
     }
 
-    float GetTimerCap()
+    public float GetTimerCap()
     {
         return timerCap;
     }
 
-    float GetTimer()
+    public float GetTimer()
     {
         return timer;
     }

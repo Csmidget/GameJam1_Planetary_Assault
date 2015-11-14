@@ -10,10 +10,10 @@ GameObject:
   - 4: {fileID: 419600}
   - 212: {fileID: 21265098}
   - 58: {fileID: 5870570}
+  - 50: {fileID: 5066628}
   - 114: {fileID: 11499636}
   - 114: {fileID: 11445004}
   - 114: {fileID: 11468384}
-  - 50: {fileID: 5066628}
   m_Layer: 0
   m_Name: Bomb
   m_TagString: Bomb
