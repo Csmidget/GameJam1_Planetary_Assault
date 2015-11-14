@@ -15,7 +15,7 @@ public class PlayerGunFire : MonoBehaviour
 	void Start ()
     {
         timer = 0.5f;
-        timerCap = 0.5f;
+        timerCap = 10f;
         timer2 = 0.5f;
         timer2Cap = 0.25f;
 	}
@@ -56,6 +56,7 @@ public class PlayerGunFire : MonoBehaviour
     void SpawnProjectile(Transform proj)
     {
         Transform projectile = (Transform)Instantiate(proj, projectileSpawner.position, transform.rotation);
+        projectile.transform.Translate(new Vector3(0,0,9));
     }
 
     public float GetTimerCap()
