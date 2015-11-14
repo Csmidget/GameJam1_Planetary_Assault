@@ -8,14 +8,16 @@ public class PlayerGunFire : MonoBehaviour
     public Transform bombProjectile;
     public Transform laserProjectile;
 
-    float timer;
-    float timer2;
+    float timer, timerCap;
+    float timer2, timer2Cap;
 
 	// Use this for initialization
 	void Start ()
     {
         timer = 0.5f;
+        timerCap = 0.5f;
         timer2 = 0.5f;
+        timer2Cap = 0.1f;
 	}
 	
 	// Update is called once per frame
@@ -28,17 +30,17 @@ public class PlayerGunFire : MonoBehaviour
     {
         timer -= Time.deltaTime;
         timer2 -= Time.deltaTime;
-        print(timer2);
+        //print(timer2);
 
         if (Input.GetKey(KeyCode.Space) && timer <= 0)
         {
             SpawnProjectile(bombProjectile);
-            timer = 0.5f;
+            timer = timerCap;
         }
         if (timer2 <= 0)
         {
             SpawnProjectile(laserProjectile);
-            timer2 = 0.1f;
+            timer2 = timer2Cap;
         }
 
         if (timer < 0)
@@ -54,5 +56,15 @@ public class PlayerGunFire : MonoBehaviour
     void SpawnProjectile(Transform proj)
     {
         Transform projectile = (Transform)Instantiate(proj, projectileSpawner.position, transform.rotation);
+    }
+
+    float GetTimerCap()
+    {
+        return timerCap;
+    }
+
+    float GetTimer()
+    {
+        return timer;
     }
 }

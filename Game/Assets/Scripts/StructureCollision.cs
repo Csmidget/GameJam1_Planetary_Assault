@@ -12,7 +12,7 @@ public class StructureCollision : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "Bomb" && health > 0)
+        if (col.gameObject.tag == "Bomb" || col.gameObject.tag == "P_Laser" && health > 0)
         {
             int dmgTaken = col.gameObject.GetComponent<ProjectileDamage>().GetDamage();
             health -= dmgTaken;

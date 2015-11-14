@@ -11,6 +11,7 @@ TagManager:
   - E_Missile
   - MinimapCam
   - E_Bullet
+  - P_Laser
   layers:
   - Default
   - TransparentFX
