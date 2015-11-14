@@ -17,39 +17,16 @@ public class BuildingSpawner : MonoBehaviour {
             int randnum = Random.Range(0,2);
             print(randnum);
 
-            //FIX THIS
+
             if (randnum == 0)
             {
-                Transform go = (Transform)GameObject.Instantiate(buildingPrefab1, new Vector3(0, 0, 0), Quaternion.identity);
-                Transform goTransform;
-                goTransform = go.GetComponent<Transform>();
-                goTransform.parent = planet.transform;
-                goTransform.position = planet.position;
-                goTransform.Rotate(new Vector3(0, 0, Random.Range(0, 360)));
-                goTransform.Translate(new Vector3(0, planet.GetComponent<CircleCollider2D>().radius * planet.localScale.x + 0.3f));
-                buildings[i] = go;
+            buildings[i] = InstantiateOnPlanet.DoInstantiate(buildingPrefab1, planet);
             }
             
             else
             {
-                Transform go = (Transform)GameObject.Instantiate(buildingPrefab2, new Vector3(0, 0, 0), Quaternion.identity);
-                Transform goTransform;
-                goTransform = go.GetComponent<Transform>();
-                goTransform.parent = planet.transform;
-                goTransform.position = planet.position;
-                goTransform.Rotate(new Vector3(0, 0, Random.Range(0, 360)));
-                goTransform.Translate(new Vector3(0, planet.GetComponent<CircleCollider2D>().radius * planet.localScale.x + 0.3f));
-                buildings[i] = go;
+            buildings[i] = InstantiateOnPlanet.DoInstantiate(buildingPrefab2, planet);
             };
-
-	//		go.transform.parent = planet.transform;
-		//	Transform goTransform;
-		//	goTransform = go.GetComponent<Transform>();
-       //     goTransform.parent = planet.transform;
-		//	goTransform.position = planet.position;
-	//		goTransform.Rotate(new Vector3(0,0,Random.Range(0,360)));
-	//		goTransform.Translate (new Vector3(0,planet.GetComponent<CircleCollider2D>().radius * planet.localScale.x + 0.3f));
-	//		buildings[i] = go;
 		}
 	}
 

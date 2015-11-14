@@ -208,6 +208,8 @@ GameObject:
   - 4: {fileID: 1135575996}
   - 114: {fileID: 1135575995}
   - 114: {fileID: 1135575997}
+  - 114: {fileID: 1135575998}
+  - 114: {fileID: 1135575999}
   m_Layer: 0
   m_Name: GameState
   m_TagString: Untagged
@@ -325,6 +327,32 @@ MonoBehaviour:
   planet: {fileID: 1136266337}
   buildingPrefab1: {fileID: 426300, guid: 4a7718b3a655df34f82a566457de1589, type: 2}
   buildingPrefab2: {fileID: 496568, guid: ba0a8c11a428f044dafee03cf8e26fa5, type: 2}
+--- !u!114 &1135575998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1135575994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a267e1475a9df3d458f8a3f1c766a1d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1135575999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1135575994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa8c9f96d71e6e4c83a473d8df546df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfTurrets: 15
+  turrets: []
+  planet: {fileID: 1136266337}
+  turretPrefab: {fileID: 496568, guid: ba0a8c11a428f044dafee03cf8e26fa5, type: 2}
 --- !u!1 &1136266336
 GameObject:
   m_ObjectHideFlags: 0
