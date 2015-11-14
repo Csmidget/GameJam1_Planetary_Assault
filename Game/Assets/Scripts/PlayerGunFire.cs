@@ -41,7 +41,6 @@ public class PlayerGunFire : MonoBehaviour
         }
         if (timer2 <= 0)
         {
-            GetComponent<AudioSource>().Play();
             SpawnProjectile(laserProjectile);
             timer2 = timer2Cap;
         }
