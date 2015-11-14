@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 419600}
   - 212: {fileID: 21265098}
-  - 50: {fileID: 5061812}
   - 58: {fileID: 5870570}
   - 114: {fileID: 11499636}
   - 114: {fileID: 11468384}
@@ -32,22 +31,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!50 &5061812
-Rigidbody2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 193196}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!58 &5870570
 CircleCollider2D:
   m_ObjectHideFlags: 1

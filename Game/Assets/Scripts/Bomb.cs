@@ -4,14 +4,15 @@ using System.Collections;
 public class Bomb : MonoBehaviour {
 
     int damage;
-    Rigidbody2D rig;
+    //Rigidbody2D rig;
+    Transform trans;
     float force;
 
 	// Use this for initialization
 	void Start () 
     {
         damage = 30;
-        rig = GetComponent<Rigidbody2D>();
+        trans = GetComponent<Transform>();
         force = 5f;
 	}
 	
@@ -28,6 +29,6 @@ public class Bomb : MonoBehaviour {
 
     void Travel()
     {
-        rig.AddForce(-transform.up * force);
+        trans.Translate(-Vector3.up * 5 * Time.deltaTime);
     }
 }
