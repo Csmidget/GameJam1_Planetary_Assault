@@ -10,6 +10,6 @@ public class Healthbar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	this.GetComponent<RectTransform>().sizeDelta = new Vector2(PlayerState.instance.pHealth,100);
+	this.GetComponent<RectTransform>().sizeDelta = new Vector2(( 100f / PlayerState.instance.pMaxHealth) * PlayerState.instance.pHealth ,100);
 	}
 }
