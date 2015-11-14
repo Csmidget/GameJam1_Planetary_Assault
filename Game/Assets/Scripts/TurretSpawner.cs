@@ -15,7 +15,7 @@ public class TurretSpawner : MonoBehaviour
         for (int i = 0; i < numberOfTurrets; i++)
         {
             turrets[i] = InstantiateOnPlanet.DoInstantiate(turretPrefab, planet);
-            turrets[i].Translate(new Vector3 (0,-0.2f,-2));
+            turrets[i].Translate(new Vector3 (0,-0.3f,-2));
         }
     }
 
