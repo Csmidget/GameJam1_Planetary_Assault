@@ -3,14 +3,16 @@ using System.Collections;
 
 public class Gamestate : MonoBehaviour
 {
-    bool isPaused = false;
-    bool lvl1Cleared = false;
-    bool lvl2Cleared = false;
-    bool lvl3Cleared = false;
-    bool lvl4Cleared = false;
-    bool lvl5Cleared = false;
+
 
     [SerializeField]
+
+    bool isPaused = false;
+    public bool lvl1Cleared = false;
+    public bool lvl2Cleared = false;
+    public bool lvl3Cleared = false;
+    public bool lvl4Cleared = false;
+    public bool lvl5Cleared = false;
 
     public static Gamestate instance = null;
     void Awake()

@@ -17,6 +17,16 @@ public class PlanetAttackState : MonoBehaviour
 
     public static PlanetAttackState instance = null;
 
+    public void LoseLevel()
+    {
+        Application.LoadLevel("MainMenu");
+    }
+    public void WinLevel()
+    {
+        Gamestate.instance.lvl1Cleared = true;
+        Application.LoadLevel("MainMenu");
+    }
+
     void Awake()
     {
         if (instance != null)

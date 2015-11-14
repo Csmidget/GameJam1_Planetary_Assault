@@ -27,7 +27,7 @@ public class PlayerState : MonoBehaviour
     {
         pScore += 100;
         print(pScore);
-        GetComponentInChildren<AudioSource>().Play();
+
     }
 
 
