@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlayerState : MonoBehaviour
 {
+	public int pMaxHealth;
     public int pHealth;
     public int pScore;
     //public pMoney;
@@ -10,6 +11,7 @@ public class PlayerState : MonoBehaviour
     void Start()
     {
         PlanetAttackState.instance.BuildingDestroyed += IncrementScore;
+		pHealth = pMaxHealth;
     }
 
     void Update()
