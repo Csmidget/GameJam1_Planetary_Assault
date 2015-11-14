@@ -7,12 +7,12 @@ public class PlayerGunFire : MonoBehaviour
     public Transform projectileSpawner;      //used to store the bulletSpawn transform, used for spawning the prefab position
     public Transform projectilePrefab;
     Transform projectile;
-    float timer;
+    float timer = 10f;
 
 	// Use this for initialization
 	void Start ()
     {
-        timer = 0.5f;
+
 	}
 	
 	// Update is called once per frame
@@ -28,7 +28,7 @@ public class PlayerGunFire : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && timer <= 0)
         {
             SpawnProjectile();
-            timer = 0.5f;
+            timer = 10f;
         }
 
         if (timer < 0)
