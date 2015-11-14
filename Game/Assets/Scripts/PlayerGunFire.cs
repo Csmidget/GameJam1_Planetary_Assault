@@ -8,6 +8,7 @@ public class PlayerGunFire : MonoBehaviour
     public Transform bombProjectile;
     public Transform laserProjectile;
 
+
     float timer, timerCap;
     float timer2, timer2Cap;
 
@@ -34,11 +35,13 @@ public class PlayerGunFire : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space) && timer <= 0)
         {
+            
             SpawnProjectile(bombProjectile);
             timer = timerCap;
         }
         if (timer2 <= 0)
         {
+            GetComponent<AudioSource>().Play();
             SpawnProjectile(laserProjectile);
             timer2 = timer2Cap;
         }
