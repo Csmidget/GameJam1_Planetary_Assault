@@ -4,9 +4,11 @@ using System.Collections;
 public class AIGunFire : MonoBehaviour 
 {
     float timer;
+    
 
     public Transform bulletSpawner;
     public Transform bulletPrefab;
+    public Transform misslePrefab;
 
 	// Use this for initialization
 	void Start () 
@@ -29,6 +31,7 @@ public class AIGunFire : MonoBehaviour
         else
         {
             SpawnProjectile();
+            SpawnMissleProj();
             timer = 0.5f;
         }
     }
@@ -36,5 +39,11 @@ public class AIGunFire : MonoBehaviour
     void SpawnProjectile()
     {
         Instantiate(bulletPrefab, bulletSpawner.position, transform.rotation);
+    }
+
+    void SpawnMissleProj()
+    {
+
+        Instantiate(misslePrefab, bulletSpawner.position, transform.rotation);
     }
 }

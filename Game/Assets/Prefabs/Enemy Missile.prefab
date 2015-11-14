@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 935da2a8ff40d0549a11464d7b36b942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerShip: {fileID: 0}
+  playerShip: {fileID: 445858, guid: 1a5cc7d389a4fdc429f9cf6b34e71ffd, type: 2}
 --- !u!114 &11491480
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,7 +112,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: playerShip
+      value: 
+      objectReference: {fileID: 445858, guid: 1a5cc7d389a4fdc429f9cf6b34e71ffd, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 197136}
