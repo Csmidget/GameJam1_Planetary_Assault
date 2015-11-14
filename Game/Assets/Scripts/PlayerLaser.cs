@@ -21,4 +21,9 @@ public class PlayerLaser : MonoBehaviour {
     {
         trans.Translate(-Vector3.up * speed * Time.deltaTime);
     }
+
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
 }

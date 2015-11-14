@@ -22,4 +22,9 @@ public class Bomb : MonoBehaviour {
     {
         trans.Translate(-Vector3.up * speed * Time.deltaTime);
     }
+
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
 }
