@@ -1507,6 +1507,10 @@ MonoBehaviour:
   - {fileID: 426300, guid: 4a7718b3a655df34f82a566457de1589, type: 2}
   - {fileID: 488828, guid: 918dd288fa9350444a47f893e0b253f4, type: 2}
   - {fileID: 482060, guid: 76b9505c85b112f4bbcab4675a7c9b1c, type: 2}
+  - {fileID: 492806, guid: a78010e389f8b3f44b0308de637a30e4, type: 2}
+  - {fileID: 407686, guid: 80fb174f4aa34c2478251aa513043535, type: 2}
+  - {fileID: 483798, guid: 03d1fb2635d4abc408a6778204b94843, type: 2}
+  - {fileID: 407962, guid: f5f8c6a713101ad4d94a00e69fb9280d, type: 2}
   buildingPrefab1: {fileID: 426300, guid: 4a7718b3a655df34f82a566457de1589, type: 2}
   buildingPrefab2: {fileID: 496568, guid: ba0a8c11a428f044dafee03cf8e26fa5, type: 2}
 --- !u!114 &1983323306
