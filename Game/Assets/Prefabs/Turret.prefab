@@ -13,7 +13,7 @@ GameObject:
   - 61: {fileID: 6184902}
   m_Layer: 0
   m_Name: Turret
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -222,6 +222,10 @@ Prefab:
       propertyPath: bulletPrefab
       value: 
       objectReference: {fileID: 492018, guid: 509efe8931561754d935fb4c15610b2c, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 111626}
