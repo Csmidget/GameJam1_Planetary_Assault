@@ -1231,6 +1231,7 @@ GameObject:
   - 114: {fileID: 1972767225}
   - 50: {fileID: 1972767224}
   - 114: {fileID: 1972767227}
+  - 114: {fileID: 1972767229}
   - 60: {fileID: 1972767228}
   m_Layer: 0
   m_Name: Player
@@ -1444,6 +1445,17 @@ PolygonCollider2D:
       - {x: -1.07000005, y: -.680000007}
       - {x: -.800000012, y: -.699999988}
       - {x: -.709999979, y: -.699999988}
+--- !u!114 &1972767229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1972767219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7985cf58036df6b4ba7a19a5909050b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1983323304
 GameObject:
   m_ObjectHideFlags: 0

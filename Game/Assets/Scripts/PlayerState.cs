@@ -16,10 +16,10 @@ public class PlayerState : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.P))
-        {
-            Application.LoadLevel("testscene");
-        }
+        //if (Input.GetKey(KeyCode.P))
+        //{
+        //    Application.LoadLevel("testscene");
+        //}
     }
 
 

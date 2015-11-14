@@ -17,7 +17,7 @@ public class PlayerCollision : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "E_Missle")
+        if (col.gameObject.tag == "E_Missile" || col.gameObject.tag == "E_Bullet")
         {
             PlayerState.instance.pHealth -= col.gameObject.GetComponent<ProjectileDamage>().GetDamage();
             Destroy(col.gameObject);
