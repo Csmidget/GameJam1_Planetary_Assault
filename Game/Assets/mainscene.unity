@@ -1577,7 +1577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pMaxHealth: 200
   pHealth: 200
-  pScore: 100
+  pScore: 0
 --- !u!114 &1972767226
 MonoBehaviour:
   m_ObjectHideFlags: 0
