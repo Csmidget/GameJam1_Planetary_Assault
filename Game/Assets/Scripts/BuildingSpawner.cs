@@ -9,8 +9,17 @@ public class BuildingSpawner : MonoBehaviour {
 	public Transform buildingPrefab1;
     public Transform buildingPrefab2;
 	// Use this for initialization
+
+    void RemoveBuilding()
+    {
+        numberOfBuildings--;
+        Debug.Log(numberOfBuildings);
+    }
+
+
 	void Start ()
 	{
+        PlanetAttackState.instance.BuildingDestroyed += RemoveBuilding;
 		for (int i = 0; i < numberOfBuildings; i++)
 		{
             

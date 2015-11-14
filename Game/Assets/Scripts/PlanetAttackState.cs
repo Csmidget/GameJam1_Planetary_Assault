@@ -6,9 +6,17 @@ public class PlanetAttackState : MonoBehaviour
 {
     public Action BuildingDestroyed = null;
 
+ //   public void InitBuildingDestroyed()
+ //   {
+ //      BuildingDestroyed();
+ //   }
+    
+
+
     [SerializeField]
 
     public static PlanetAttackState instance = null;
+
     void Awake()
     {
         if (instance != null)

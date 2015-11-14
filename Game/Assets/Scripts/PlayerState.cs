@@ -1,11 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerState : MonoBehaviour 
+public class PlayerState : MonoBehaviour
 {
     public int pHealth;
     public int pScore;
     //public pMoney;
+
+    void Start()
+    {
+        PlanetAttackState.instance.BuildingDestroyed += IncrementScore;
+    }
+
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.P))
+        {
+            Application.LoadLevel("testscene");
+        }
+    }
+
 
     void IncrementScore()
     {
@@ -13,23 +27,28 @@ public class PlayerState : MonoBehaviour
         print(pScore);
     }
 
+
+    public static PlayerState instance = null;
+
     void Awake()
     {
+        {
+            if (instance != null)
+            {
+                Debug.LogError("Singleton PlayerState already found...");
+            }
+
+            Cursor.visible = false;
+            instance = this;
+        }
         Object.DontDestroyOnLoad(transform.gameObject);
+
+
+
+        Debug.Log("++");
     }
 
-	// Use this for initialization
-	void Start () 
-    {
-        PlanetAttackState.instance.BuildingDestroyed += IncrementScore;
-	}
-	
-	// Update is called once per frame
-	void Update () 
-    {
-        if (Input.GetKey(KeyCode.P))
-        {
-            Application.LoadLevel("testscene");
-        }
-	}
+
 }
+	// Update is called once per frame
+
