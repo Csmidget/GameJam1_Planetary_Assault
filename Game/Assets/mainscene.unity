@@ -699,8 +699,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1972767221}
   - 212: {fileID: 1972767220}
-  - 114: {fileID: 1972767222}
   - 114: {fileID: 1972767223}
+  - 114: {fileID: 1972767222}
   - 50: {fileID: 1972767224}
   - 114: {fileID: 1972767225}
   m_Layer: 0

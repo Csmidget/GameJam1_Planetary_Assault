@@ -16,14 +16,14 @@ public class PlayerController : MonoBehaviour {
     {
         planet = GameObject.FindGameObjectWithTag("Planet").transform;        
         bg = GameObject.FindGameObjectWithTag("BG").transform;
-        timer = 2.0f;
+        timer = 0.5f;
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
+        Fire();
         Controls();
-        Fire(timer);
 	}
 
     void Controls()
@@ -48,19 +48,19 @@ public class PlayerController : MonoBehaviour {
         transform.position = Vector3.Lerp(transform.position, mousePos, Time.deltaTime);         //this then user linear interpolation to smooth out the trasnition from ships position to mouse.
     }
 
-    void Fire(float t)
+    void Fire()
     {
-        if (Input.GetKey(KeyCode.Space))
+        timer -= Time.deltaTime;
+        print (timer);
+        if (Input.GetKey(KeyCode.Space) && timer <= 0)
         {
-            if (t > 0)
-            {
-                t -= Time.deltaTime;
-            }
-            else
-            {
-                SpawnProjectile();
-                t = 2.0f;
-            }
+            SpawnProjectile();
+            timer = 0.5f;
+        }
+
+        if (timer < 0)
+        {
+            timer = 0;
         }
     }
 
