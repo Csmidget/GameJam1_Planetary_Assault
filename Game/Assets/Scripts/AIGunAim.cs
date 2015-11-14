@@ -1,13 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AIScripts : MonoBehaviour 
+public class AIGunAim : MonoBehaviour 
 {
-   // Vector3 pos;
-   // Vector3 dir;
-   // float angle;
 
-	// Use this for initialization
+    // Use this for initialization
 	void Start () 
     {
 	
