@@ -23,5 +23,8 @@ public class E_Missle : MonoBehaviour {
         transform.Translate(Vector3.Slerp(transform.up * thrust, storeTransform, 0.5f));
 	}
 
-
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
 }
