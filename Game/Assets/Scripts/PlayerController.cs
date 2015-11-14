@@ -9,19 +9,21 @@ public class PlayerController : MonoBehaviour {
     public Transform bulletPrefab;      
     Transform bg;               //background
     Vector3 mousePos;
+    float timer;
 
 	// Use this for initialization
 	void Start () 
     {
         planet = GameObject.FindGameObjectWithTag("Planet").transform;        
         bg = GameObject.FindGameObjectWithTag("BG").transform;
+        timer = 2.0f;
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
         Controls();
-        Fire();
+        Fire(timer);
 	}
 
     void Controls()
@@ -46,11 +48,24 @@ public class PlayerController : MonoBehaviour {
         transform.position = Vector3.Lerp(transform.position, mousePos, Time.deltaTime);         //this then user linear interpolation to smooth out the trasnition from ships position to mouse.
     }
 
-    void Fire()
+    void Fire(float t)
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
-            Instantiate(bulletPrefab, bulletSpawner.position, Quaternion.identity);
+            if (t > 0)
+            {
+                t -= Time.deltaTime;
+            }
+            else
+            {
+                SpawnProjectile();
+                t = 2.0f;
+            }
         }
+    }
+
+    void SpawnProjectile()
+    {
+        Instantiate(bulletPrefab, bulletSpawner.position, Quaternion.identity);
     }
 }
