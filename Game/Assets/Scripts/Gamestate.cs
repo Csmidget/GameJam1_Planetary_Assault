@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Gamestate : MonoBehaviour
 {
-
+    bool isPaused = false;
     [SerializeField]
 
     public static Gamestate instance = null;
@@ -15,4 +15,28 @@ public class Gamestate : MonoBehaviour
         }
         instance = this;
     }
+
+    void Update()
+    {
+        PausingGame();
+
+    }
+
+
+    void PausingGame()
+    {
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            if (Time.timeScale == 1)
+            {
+                Time.timeScale = 0;
+            }
+            else
+            {
+                Time.timeScale = 1;
+            }
+        }
+
+    }
+   
 }
