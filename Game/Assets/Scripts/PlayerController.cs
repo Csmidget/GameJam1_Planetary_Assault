@@ -51,8 +51,7 @@ public class PlayerController : MonoBehaviour {
 
         float h = horizontalSpeed * Input.GetAxis("Mouse X");
         float v = verticalSpeed * Input.GetAxis("Mouse Y");
-        Vector3 nextpos = transform.position + new Vector3(h, v, 0); 
-        if (nextpos.x < 8.2 && nextpos.x > -8.2 && nextpos.y < 4.5 && nextpos.y > -1.8) transform.Translate(h, v, 0);
+        transform.Translate(h, v, 0);
     //    transform.position = Vector3.Lerp(transform.position, mousePos, 2 * Time.deltaTime);         //this then user linear interpolation to smooth out the trasnition from ships position to mouse.
         
     }
