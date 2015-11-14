@@ -3,12 +3,12 @@ using System.Collections;
 
 public class BulletTravel : MonoBehaviour 
 {
-    float speed;
+    public float speed = 15f;
 	// Use this for initialization
 
 	void Start () 
     {
-        speed = 15f;
+ 
 	}
 	
 	// Update is called once per frame
