@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 492018}
   - 212: {fileID: 21201436}
   - 114: {fileID: 11422394}
+  - 114: {fileID: 11427478}
   m_Layer: 0
   m_Name: Enemy Laser
   m_TagString: Untagged
@@ -38,6 +39,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8f38cd1648fe5449b26cc6512d35c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11427478
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c95263020b1c1749b2caaa63fc41d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &21201436

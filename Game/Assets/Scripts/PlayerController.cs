@@ -6,7 +6,8 @@ public class PlayerController : MonoBehaviour {
     Transform planet;           //used to store a planet transform.
 
     public Transform bulletSpawner;      //used to store the bulletSpawn transform, used for spawning the prefab position
-    public Transform bulletPrefab;      
+    public Transform bulletPrefab;
+    Transform projectile;
     Transform bg;               //background
     Vector3 mousePos;
     float timer;
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour {
     {
         Fire();
         Controls();
+        RotateToPlanet();
 	}
 
     void Controls()
@@ -66,6 +68,15 @@ public class PlayerController : MonoBehaviour {
 
     void SpawnProjectile()
     {
-        Instantiate(bulletPrefab, bulletSpawner.position, Quaternion.identity);
+        projectile = (Transform)Instantiate(bulletPrefab, bulletSpawner.position, transform.rotation);
+    }
+
+    void RotateToPlanet()
+    {
+        Vector3 pos = transform.position;
+        Vector3 dir = planet.position - pos;
+
+        Quaternion rotation = Quaternion.LookRotation(Vector3.forward, -dir);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 1.75f);
     }
 }
