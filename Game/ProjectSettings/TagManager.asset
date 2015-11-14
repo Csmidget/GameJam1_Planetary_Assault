@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bomb
+  - Planet
+  - BG
+  - Building
+  - E_Missile
   layers:
   - Default
   - TransparentFX
@@ -14,7 +18,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Overlay
   - 
   - 
   - 
