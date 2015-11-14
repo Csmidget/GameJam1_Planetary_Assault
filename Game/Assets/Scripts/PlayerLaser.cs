@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Bomb : MonoBehaviour {
+public class PlayerLaser : MonoBehaviour {
 
-    Transform trans;
+	Transform trans;
     public float speed;
-
 	// Use this for initialization
 	void Start () 
     {

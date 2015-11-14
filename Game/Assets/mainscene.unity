@@ -1360,7 +1360,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawner: {fileID: 1566240917}
-  projectilePrefab: {fileID: 419600, guid: fd5be182a29b63c45a834452f851ff69, type: 2}
+  bombProjectile: {fileID: 419600, guid: fd5be182a29b63c45a834452f851ff69, type: 2}
+  laserProjectile: {fileID: 405894, guid: 2ff3a0efe07682b408b6f42ea89ba562, type: 2}
 --- !u!114 &1972767227
 MonoBehaviour:
   m_ObjectHideFlags: 0
