@@ -41,8 +41,8 @@ Rigidbody2D:
   m_GameObject: {fileID: 193196}
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: .200000003
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -118,7 +118,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: m_GravityScale
-      value: .200000003
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_AngularDrag
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

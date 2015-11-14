@@ -8,7 +8,7 @@ public class Scoretext : MonoBehaviour {
 
     void UpdateScoreUI() 
     {
-        sText.text = "Score: " + PlayerState.instance.pScore;
+        sText.text = "" +PlayerState.instance.pScore;
       //  GetComponent<Text>().text = sText.text;
     }
 
@@ -17,7 +17,7 @@ public class Scoretext : MonoBehaviour {
 	void Start () {
         sText = GetComponent<Text>(); 
         PlanetAttackState.instance.BuildingDestroyed += UpdateScoreUI;
-
+        sText.text = ""+ PlayerState.instance.pScore;
 	}
 	
 	// Update is called once per frame
