@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class E_Missle : MonoBehaviour {
-    public Transform playerShip;        //stores the players position.
+    GameObject playerShip;        //stores the players position.
     Vector3 storeTransform;     //stores the trasnform once to a vector3, this is so the missle doesnt home in.
     
 
@@ -12,7 +12,8 @@ public class E_Missle : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
     {
-        storeTransform = playerShip.position;
+        playerShip = GameObject.FindGameObjectWithTag("Player");
+        storeTransform = playerShip.transform.position;
         thrust = 5f;
 	}
 	
