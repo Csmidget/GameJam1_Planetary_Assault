@@ -21,4 +21,6 @@ public class E_Missle : MonoBehaviour {
     {
         rb.AddForce(Vector3.Slerp(transform.up * thrust, storeTransform, 0.5f));
 	}
+
+
 }
