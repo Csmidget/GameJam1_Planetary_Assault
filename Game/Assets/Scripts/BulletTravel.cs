@@ -10,7 +10,8 @@ public class BulletTravel : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            PlayerState.instance.pHealth --;
+            PlayerState.instance.pHealth -= GetComponent<ProjectileDamage>().GetDamage();
+            //print(PlayerState.instance.pHealth);
             Destroy(gameObject);
         }
 

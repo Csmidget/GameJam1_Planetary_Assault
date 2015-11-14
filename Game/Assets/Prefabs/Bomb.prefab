@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21265098}
   - 58: {fileID: 5870570}
   - 114: {fileID: 11499636}
+  - 114: {fileID: 11445004}
   - 114: {fileID: 11468384}
   - 50: {fileID: 5066628}
   m_Layer: 0
@@ -61,6 +62,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: .100000001
+--- !u!114 &11445004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c34eb5fea20061408c19d89ef91e51d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 30
 --- !u!114 &11468384
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -140,6 +153,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalScale.y
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: damage
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

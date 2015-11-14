@@ -3,15 +3,12 @@ using System.Collections;
 
 public class Bomb : MonoBehaviour {
 
-    int damage;
-    //Rigidbody2D rig;
     Transform trans;
     float force;
 
 	// Use this for initialization
 	void Start () 
     {
-        damage = 30;
         trans = GetComponent<Transform>();
         force = 5f;
 	}
@@ -21,11 +18,6 @@ public class Bomb : MonoBehaviour {
     {
         Travel();
 	}
-
-    public int GetDamage()
-    {
-        return damage;
-    }
 
     void Travel()
     {

@@ -24,7 +24,7 @@ public class Building : MonoBehaviour {
     {
         if (col.gameObject.tag == "Bomb" && health >= 0)
         {
-            int dmgTaken = col.gameObject.GetComponent<Bomb>().GetDamage();
+            int dmgTaken = col.gameObject.GetComponent<ProjectileDamage>().GetDamage();
             health -= dmgTaken;
             Destroy(col.gameObject);
         }

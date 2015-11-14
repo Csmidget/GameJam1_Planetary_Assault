@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21201436}
   - 114: {fileID: 11422394}
   - 114: {fileID: 11427478}
+  - 114: {fileID: 11437224}
   - 61: {fileID: 6109212}
   - 61: {fileID: 6128600}
   m_Layer: 0
@@ -80,6 +81,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c95263020b1c1749b2caaa63fc41d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11437224
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c34eb5fea20061408c19d89ef91e51d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
 --- !u!212 &21201436
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -112,7 +125,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 182490}
