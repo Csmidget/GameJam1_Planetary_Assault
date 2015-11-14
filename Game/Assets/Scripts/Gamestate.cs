@@ -18,9 +18,13 @@ public class Gamestate : MonoBehaviour
         if (instance != null)
         {
             Debug.LogError("Singleton GameState already found...");
+            Destroy(gameObject);
         }
-        instance = this;
-        Object.DontDestroyOnLoad(transform.gameObject);
+        else
+        {
+            instance = this;
+            Object.DontDestroyOnLoad(transform.gameObject);
+        }
     }
 
     void Update()

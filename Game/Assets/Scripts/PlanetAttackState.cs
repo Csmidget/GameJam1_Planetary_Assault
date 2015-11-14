@@ -19,12 +19,14 @@ public class PlanetAttackState : MonoBehaviour
 
     public void WinLevel()
     {
+        PlayerState.instance.pHealth = PlayerState.instance.pMaxHealth;
         Gamestate.instance.lvl1Cleared = true;
         Application.LoadLevel("MainMenu");
     }
 
     public void LoseLevel()
     {
+        PlayerState.instance.pHealth = PlayerState.instance.pMaxHealth;
         Application.LoadLevel("MainMenu");
     }
 
@@ -42,6 +44,7 @@ public class PlanetAttackState : MonoBehaviour
     void Update()
     {
         PausingGame();
+        if (PlayerState.instance.pHealth <= 0) LoseLevel();
     }
 
     void PausingGame()

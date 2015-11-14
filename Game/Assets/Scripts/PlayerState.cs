@@ -38,6 +38,7 @@ public class PlayerState : MonoBehaviour
             if (instance != null)
             {
                 Debug.LogError("Singleton PlayerState already found...");
+                Destroy(gameObject);
             }
 
             Cursor.visible = false;
