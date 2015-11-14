@@ -27,11 +27,10 @@ public class PlayerAimLine : MonoBehaviour
 
         while (i < lineLength)
         {
-            Vector3 pos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-            Vector3 targPos = new Vector3(planet.position.x, planet.position.y, planet.position.z);
+            Vector3 pos = new Vector3(transform.position.x, transform.position.y, 20);
+            Vector3 targPos = new Vector3(planet.position.x, planet.position.y, 20);
             line.SetPosition(0, pos);
             line.SetPosition(1, targPos);
-            //line.SetPosition(1, 
             i++;
         }
 	}
