@@ -25,7 +25,7 @@ public class AIGunAim : MonoBehaviour
         Vector3 dir = player.position - pos;
         //float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         Quaternion rotation = Quaternion.LookRotation(Vector3.forward, dir);
-        transform.rotation = Quaternion.Slerp(transform.localRotation, rotation, Time.deltaTime * 1.75f);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 1.75f);
 
         //transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
         //transform.rotation = Quaternion.Lerp(transform.rotation, player.rotation, Time.time);

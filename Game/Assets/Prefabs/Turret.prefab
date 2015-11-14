@@ -27,7 +27,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 495834}
   - 212: {fileID: 21265568}
-  - 114: {fileID: 11453780}
+  - 114: {fileID: 11428048}
   m_Layer: 0
   m_Name: Turret Gun
   m_TagString: Untagged
@@ -86,7 +86,7 @@ BoxCollider2D:
   m_Offset: {x: -.0388698578, y: .369262695}
   serializedVersion: 2
   m_Size: {x: .87260443, y: .5614748}
---- !u!114 &11453780
+--- !u!114 &11428048
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
