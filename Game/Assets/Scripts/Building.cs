@@ -30,7 +30,7 @@ public class Building : MonoBehaviour {
         }
         else
         {
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 }
