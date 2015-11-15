@@ -21,6 +21,12 @@ public class PlanetAttackState : MonoBehaviour
 
     public static PlanetAttackState instance = null;
 
+    void Start()
+    {
+        PlayerState.instance.StartListening();
+    }
+
+
     public void WinLevel()
     {
         PlayerState.instance.pHealth = PlayerState.instance.pMaxHealth;
@@ -50,6 +56,7 @@ public class PlanetAttackState : MonoBehaviour
     }
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
         PausingGame();
         if (PlayerState.instance.pHealth <= 0) LoseLevel();
     }

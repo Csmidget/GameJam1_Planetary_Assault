@@ -9,7 +9,7 @@ public class BuildingsRemainingText : MonoBehaviour
 
     void UpdatebRemainingUI()
     {
-        bText.text = "Buildings Required: " + PlanetAttackState.instance.GetComponent<BuildingSpawner>().numberOfBuildings;
+        bText.text = "Buildings Required: " + (PlanetAttackState.instance.GetComponent<BuildingSpawner>().numberOfBuildings -1);
         //  GetComponent<Text>().text = sText.text;
     }
 
@@ -19,7 +19,7 @@ public class BuildingsRemainingText : MonoBehaviour
     {
         bText = GetComponent<Text>();
         PlanetAttackState.instance.BuildingDestroyed += UpdatebRemainingUI;
-        bText.text = "Buildings Required: " + PlanetAttackState.instance.GetComponent<BuildingSpawner>().numberOfBuildings;
+        bText.text = "Buildings Required: " + (PlanetAttackState.instance.GetComponent<BuildingSpawner>().numberOfBuildings);
 
     }
 

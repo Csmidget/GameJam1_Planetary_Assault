@@ -8,10 +8,16 @@ public class PlayerState : MonoBehaviour
     public int pScore;
     //public pMoney;
 
+
+
     void Start()
     {
-        PlanetAttackState.instance.BuildingDestroyed += IncrementScore;
 		pHealth = pMaxHealth;
+    }
+
+    public void StartListening()
+    {
+        PlanetAttackState.instance.BuildingDestroyed += IncrementScore;
     }
 
     void Update()
@@ -25,7 +31,7 @@ public class PlayerState : MonoBehaviour
 
     void IncrementScore()
     {
-        pScore += 100;
+        PlayerState.instance.pScore += 100;
         print(pScore);
     }
 
@@ -34,19 +40,18 @@ public class PlayerState : MonoBehaviour
 
     void Awake()
     {
-        {
-            if (instance != null)
-            {
-                Debug.LogError("Singleton PlayerState already found...");
-                Destroy(gameObject);
-            }
 
+        if (instance != null)
+        {
+            Debug.LogError("Singleton PlayerState already found...");
+            Destroy(gameObject);
+        }
+        else
+        {
             Cursor.visible = false;
             instance = this;
+            Object.DontDestroyOnLoad(transform.gameObject);
         }
-        Object.DontDestroyOnLoad(transform.gameObject);
-
-        Debug.Log("++");
     }
 
 

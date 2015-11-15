@@ -922,7 +922,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Buildings Remaining: 70'
+  m_Text: 
 --- !u!222 &709226487
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -978,7 +978,6 @@ GameObject:
   - 20: {fileID: 835980510}
   - 92: {fileID: 835980508}
   - 124: {fileID: 835980509}
-  - 81: {fileID: 835980507}
   m_Layer: 8
   m_Name: MinimapCamera
   m_TagString: MinimapCam
@@ -986,13 +985,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &835980507
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 835980506}
-  m_Enabled: 1
 --- !u!92 &835980508
 Behaviour:
   m_ObjectHideFlags: 0
@@ -1365,6 +1357,10 @@ Prefab:
     - target: {fileID: 22491280, guid: ec63ad906c1929b42b88d1d15fe9357d, type: 2}
       propertyPath: m_Pivot.y
       value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425730, guid: ec63ad906c1929b42b88d1d15fe9357d, type: 2}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ec63ad906c1929b42b88d1d15fe9357d, type: 2}
