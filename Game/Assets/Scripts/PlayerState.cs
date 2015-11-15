@@ -6,13 +6,17 @@ public class PlayerState : MonoBehaviour
 	public int pMaxHealth;
     public int pHealth;
     public int pScore;
+    public float pFireRate;
+    public float pBombCool;
     //public pMoney;
 
 
 
     void Start()
     {
-		pHealth = pMaxHealth;
+        pHealth = pMaxHealth;
+        pFireRate = 0.25f;
+        pBombCool = 1f;
     }
 
     public void StartListening()

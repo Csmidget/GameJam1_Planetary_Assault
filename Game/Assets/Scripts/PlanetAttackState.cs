@@ -25,6 +25,7 @@ public class PlanetAttackState : MonoBehaviour
     {
         PlayerState.instance.StartListening();
         Gamestate.instance.haveplayed = true;
+        PlayerState.instance.pHealth = PlayerState.instance.pMaxHealth;
     }
 
 

@@ -16,11 +16,10 @@ public class PlayerGunFire : MonoBehaviour
 	void Start ()
     {
         timer = 0.5f;
-        timerCap = 10f;
+        timerCap = PlayerState.instance.pBombCool;
         timer2 = 0.5f;
-        timer2Cap = 0.25f;
+        timer2Cap = PlayerState.instance.pFireRate ;
 	}
-	
 	// Update is called once per frame
 	void Update ()
     {
