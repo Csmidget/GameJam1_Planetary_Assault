@@ -31,7 +31,7 @@ public class AIGunFire : MonoBehaviour
         else
         {
             SpawnProjectile();
-            timer = 0.5f;
+            timer = PlanetAttackState.instance.firerate;
         }
 
         /*if (timer2 > 0)

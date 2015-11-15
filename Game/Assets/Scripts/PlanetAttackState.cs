@@ -10,17 +10,24 @@ public class PlanetAttackState : MonoBehaviour
  //   {
  //      BuildingDestroyed();
  //   }
-    
+
 
 
     [SerializeField]
+
+  
+
+    public float firerate;
 
     public static PlanetAttackState instance = null;
 
     public void WinLevel()
     {
         PlayerState.instance.pHealth = PlayerState.instance.pMaxHealth;
-        Gamestate.instance.lvl1Cleared = true;
+        if(Application.loadedLevel == 1) Gamestate.instance.lvl1Cleared = true;
+        if(Application.loadedLevel == 2) Gamestate.instance.lvl2Cleared = true;
+        if(Application.loadedLevel == 3) Gamestate.instance.lvl3Cleared = true;
+        if(Application.loadedLevel == 4) Gamestate.instance.lvl4Cleared = true;
         Application.LoadLevel("MainMenu");
     }
 

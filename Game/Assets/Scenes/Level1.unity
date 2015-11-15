@@ -1648,8 +1648,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ec72bf4b64e33742aa337d1ee72205d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfBuildings: 2
+  numberOfBuildings: 40
   buildings:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   planet: {fileID: 1136266337}
@@ -1686,13 +1724,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fa8c9f96d71e6e4c83a473d8df546df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfTurrets: 15
+  numberOfTurrets: 10
   turrets:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1728,6 +1761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f0b108f2a2c5904eb7705d3116c1e61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firerate: .800000012
 --- !u!114 &1983323310
 MonoBehaviour:
   m_ObjectHideFlags: 0

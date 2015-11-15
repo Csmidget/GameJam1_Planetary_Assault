@@ -23,6 +23,6 @@ public class Scoretext : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-
+        sText.text = "" + PlayerState.instance.pScore;
 	}
 }
