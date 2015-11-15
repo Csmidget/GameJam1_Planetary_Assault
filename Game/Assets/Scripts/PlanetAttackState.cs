@@ -52,8 +52,10 @@ public class PlanetAttackState : MonoBehaviour
     public void LoseLevel()
     {
         PlayerState.instance.pHealth = PlayerState.instance.pMaxHealth;
+        Time.timeScale = 1;
         Application.LoadLevel("MainMenu");
-    }
+
+    }   
 
 
     void Awake()
@@ -70,6 +72,9 @@ public class PlanetAttackState : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
         PausingGame();
+
+        if (Time.timeScale == 0) { if (Input.GetKeyDown(KeyCode.Escape)) LoseLevel(); };
+
         if (PlayerState.instance.pHealth <= 0) LoseLevel();
     }
 
@@ -81,6 +86,7 @@ public class PlanetAttackState : MonoBehaviour
             {
                 pausedTxt.SetActive(true);
                 resumeTxt.SetActive(true);
+                
                 quitTxt.SetActive(true);
                 Cursor.visible = true;
                 Time.timeScale = 0;

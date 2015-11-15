@@ -35,7 +35,7 @@ public class PlayerState : MonoBehaviour
 
     void IncrementScore()
     {
-        PlayerState.instance.pScore += 10000;
+        PlayerState.instance.pScore += 100;
         print(pScore);
     }
 
