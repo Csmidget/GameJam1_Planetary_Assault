@@ -9,6 +9,7 @@ public class Gamestate : MonoBehaviour
    public bool lvl3Cleared = false;
    public bool lvl4Cleared = false;
    public bool lvl5Cleared = false;
+   public bool haveplayed = false;
 
     [SerializeField]
 

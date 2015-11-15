@@ -24,6 +24,7 @@ public class PlanetAttackState : MonoBehaviour
     void Start()
     {
         PlayerState.instance.StartListening();
+        Gamestate.instance.haveplayed = true;
     }
 
 
