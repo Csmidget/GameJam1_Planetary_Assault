@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.UI;
 
 public class PlanetAttackState : MonoBehaviour
 {
@@ -15,14 +16,23 @@ public class PlanetAttackState : MonoBehaviour
 
     [SerializeField]
 
-  
 
+    GameObject pausedTxt;
+    GameObject resumeTxt;
+    GameObject quitTxt;
     public float firerate;
 
     public static PlanetAttackState instance = null;
 
     void Start()
     {
+        pausedTxt = GameObject.FindGameObjectWithTag("Paused") as GameObject;
+        resumeTxt = GameObject.FindGameObjectWithTag("Resume") as GameObject;
+        quitTxt = GameObject.FindGameObjectWithTag("Quit") as GameObject;
+
+        pausedTxt.SetActive(false);
+        resumeTxt.SetActive(false);
+        quitTxt.SetActive(false);
         PlayerState.instance.StartListening();
         Gamestate.instance.haveplayed = true;
         PlayerState.instance.pHealth = PlayerState.instance.pMaxHealth;
@@ -69,10 +79,18 @@ public class PlanetAttackState : MonoBehaviour
         {
             if (Time.timeScale == 1)
             {
+                pausedTxt.SetActive(true);
+                resumeTxt.SetActive(true);
+                quitTxt.SetActive(true);
+                Cursor.visible = true;
                 Time.timeScale = 0;
             }
             else
             {
+                pausedTxt.SetActive(false);
+                resumeTxt.SetActive(false);
+                quitTxt.SetActive(false);
+                Cursor.visible = false;
                 Time.timeScale = 1;
             }
         }

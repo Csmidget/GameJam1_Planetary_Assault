@@ -12,6 +12,9 @@ TagManager:
   - MinimapCam
   - E_Bullet
   - P_Laser
+  - Paused
+  - Quit
+  - Resume
   layers:
   - Default
   - TransparentFX
