@@ -12,10 +12,20 @@ public class SceneController : MonoBehaviour
     public void IncreaseHP()
     {
         
-        if (PlayerState.instance.pScore >= 1000)
+        if (PlayerState.instance.pScore >= 2000)
         {
         PlayerState.instance.pMaxHealth += 10;
-        PlayerState.instance.pScore-=1000;
+        PlayerState.instance.pScore-=2000;
+        }
+    }
+
+    public void DecreaseFireRate()
+    {
+
+        if (PlayerState.instance.pScore >= 3000 && PlayerState.instance.pFireRate > 0.05f)
+        {
+            PlayerState.instance.pFireRate -= 0.05f;
+            PlayerState.instance.pScore -= 3000;
         }
     }
 
@@ -27,6 +37,7 @@ public class SceneController : MonoBehaviour
             PlayerState.instance.pBombCool -= 1f;
             PlayerState.instance.pScore -= 4000;
         }
+
     }
 
 

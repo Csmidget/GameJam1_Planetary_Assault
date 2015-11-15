@@ -16,7 +16,7 @@ public class PlayerState : MonoBehaviour
     {
         pHealth = pMaxHealth;
         pFireRate = 0.25f;
-        pBombCool = 1f;
+        pBombCool = 10f;
     }
 
     public void StartListening()
@@ -35,7 +35,7 @@ public class PlayerState : MonoBehaviour
 
     void IncrementScore()
     {
-        PlayerState.instance.pScore += 100;
+        PlayerState.instance.pScore += 10000;
         print(pScore);
     }
 
